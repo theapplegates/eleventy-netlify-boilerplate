@@ -3,8 +3,16 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const searchFilter = require("./src/filters/searchFilter");
+
+
 
 module.exports = function(eleventyConfig) {
+     config.addFilter("search", searchFilter);
+  config.addCollection("posts", collection => {
+    return [...collection.getFilteredByGlob("./posts/**/*.md")];
+    }];
+
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -107,4 +115,5 @@ module.exports = function(eleventyConfig) {
       output: "_site"
     }
   };
+};
 };
