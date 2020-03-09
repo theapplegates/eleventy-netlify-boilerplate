@@ -15,6 +15,10 @@ So, I guess I should include my [AGE](https://github.com/FiloSottile/age) public
 
 Age Public Key
 
-`pubkey: age19eyljfzyhly22spyjnmw6u0zpemz62e95625umgxmp3ft27zs4esgmh90a`
+```
+pubkey: age19eyljfzyhly22spyjnmw6u0zpemz62e95625umgxmp3ft27zs4esgmh90a
+```
+
+
 
 ![](https://res.cloudinary.com/paulportfolio/image/upload/c_fit,q_auto,f_auto,dpr_auto/v1575916808/Signature/Paul-Applegate-blog-maybe-last.png)
